@@ -6,5 +6,6 @@ const app = express();
 
 app.use(bodyParser.json())
 app.use(todosRouters)
-
-app.listen(3000);
+app.listen(3000, ()=> {
+    console.log("running on port 3000");
+});
